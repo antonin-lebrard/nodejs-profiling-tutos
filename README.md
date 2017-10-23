@@ -19,6 +19,8 @@ Mais pour un Chromium pas mis à jour en utilisant par example [ungoogled-chromi
 - Cocher "Node debugging"
 - Se plaindre parce que cela peux ne pas marcher
 
+![Activer les dev tools pour nodejs](https://github.com/antonin-lebrard/nodejs-profiling-tutos/blob/master/enableExperiments.gif)
+
 ## Profilling
 
 En prenant pour exemple une application node `index.js`:
@@ -33,6 +35,8 @@ Debugger listening on port 9229.
 - Si Chrome a bien été configuré, l'appli `index.js` devrait apparaitre dans 'Remote Target' avec l'icone ![image nodejs icon](https://nodejs.org/static/favicon.png) et son path formatté avec des `_`
 - Cliquer sur `inspect` ouvrira une fenetre Dev Tools spécialisée pour node, dont les catégories qui nous intéressent sont 'Profiler' et 'Memory'
 
+![Ouvrir les dev tools sur une appli exemple](https://github.com/antonin-lebrard/nodejs-profiling-tutos/blob/master/openNodeDevTools.gif)
+
 ### CPU Profiler
 
 Correspond à la catégorie 'Profiler' des Dev Tools.
@@ -41,7 +45,7 @@ Fonctionne de la même manière que l'équivalent front-end 'Record Javascript C
 
 Cliquer sur 'Start' commencera la capture CPU et après quelques intéractions avec l'appli node, cliquer sur 'Stop' nous ouvrira une fenêtre nous donnant le temps d'execution pour chaque function, ainsi qu'un mode 'Chart' nous montrant un flame chart sur lequel on peut zoomer et intéragir pour aller au code correspondant (par example fonction anonyme)
 
-Insérer gif ici
+![Utiliser le CPU Profiler](https://github.com/antonin-lebrard/nodejs-profiling-tutos/blob/master/recordCPU.gif)
 
 ### Memory Profiler
 
@@ -53,7 +57,7 @@ Même fonctionnement que le CPU Profiler, et même résultat visuel.
 
 Mais attention à une petite confusion, là où le CPU Profiler utilise le temps en abscisse, le Memory Profiler n'utilise pas le temps, et mets à plat l'utilisation de la mémoire par les différentes fonctions. La courbe qui ressemble à une timeline au dessus montre bien l'évolution de la mémoire dans le temps, mais elle semble suivre une échelle variable.
 
-Insérer gif ici
+![Utiliser le Memory Profiler](https://github.com/antonin-lebrard/nodejs-profiling-tutos/blob/master/recordMemory.gif)
 
 ## Notes
 
