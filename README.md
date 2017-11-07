@@ -65,6 +65,7 @@ L'idéal serait d'avoir l'utilisation du CPU et de la mémoire associées, mais 
 
 Des liens utiles pour aller plus loin :
 
+- https://github.com/ChromeDevTools/awesome-chrome-devtools <= all kinds of good ressources here
 - https://github.com/thlorenz/v8-perf/issues/4
 - https://github.com/node-inspector/node-inspector
 - https://github.com/node-inspector/v8-profiler
